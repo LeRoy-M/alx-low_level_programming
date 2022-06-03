@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE="7-main.c" | gcc -S -masm=intel $CFILE -o 7-main.s
+export CFILE="0-main.c" | gcc -S -masm=intel $CFILE -o 0-main.s
