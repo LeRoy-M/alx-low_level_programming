@@ -10,7 +10,7 @@ int main(void)
 {
 	char sentence[] = "_putchar";
 	int letter;
-	
+
 	for (letter = 0; letter < 8; letter++)
 	{
 		_putchar(sentence[letter]);
