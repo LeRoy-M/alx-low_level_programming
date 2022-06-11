@@ -2,7 +2,7 @@
 
 /**
  * _islower - Checks for lowercase character
- *
+ * @c: Variable name
  * Return: 1 if 'c' is lowercase OR 0 if otherwise
  */
 
