@@ -8,6 +8,14 @@
 
 int main(void)
 {
-	_putchar("_putchar");
+	char sentence[] = "_putchar";
+	int letter;
+	
+	for (letter = 0; letter < 8; letter++)
+	{
+		_putchar(sentence[letter]);
+	}
+	_putchar('\n');
+
 	return (0);
 }
