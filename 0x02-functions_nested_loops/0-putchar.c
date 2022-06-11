@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* main - Entry Point
+* main - Enrty Point
 *
-* Return: Always 0 (Success)
+* Return: Always 0 (Sucess)
 */
+
 int main(void)
 {
-	_putchar("_putchar\n");
-
+	_putchar("_putchar");
 	return (0);
 }
