@@ -1,4 +1,4 @@
-0. 98 Battery st. [0-reset_to_98.c] >> Takes a pointer to an 'int' as parameter and updates the value it points to '98'
+0. 98 Battery st. [0-reset_to_98.c] >> Takes a pointer to an 'int' as parameter and updates the value it points to to '98'
 1. Don't swap horses in crossing a stream [1-swap.c] >> Swaps the values of two integers
 2. This report, by its very length, defends itself against the risk of being read [2-strlen.c] >> Returns the length of a string
 3. I do not fear computers. I fear the lack of them [3-puts.c] >> Prints a string, followed by a new line, to stdout
