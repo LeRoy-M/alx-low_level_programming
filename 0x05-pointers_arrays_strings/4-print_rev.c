@@ -18,7 +18,7 @@ void print_rev(char *s)
 	while (slen > -1)
 	{
 		_putchar(s[slen]);
-		slen--;
+		--slen;
 	}
 	_putchar('\n');
 }
