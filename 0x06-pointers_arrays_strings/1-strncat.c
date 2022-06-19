@@ -13,9 +13,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	src[n];
-
-	char *ptr = strcat(dest, src);
+	char *ptr = strncat(dest, src, n);
 
 	return ((char *) ptr);
 
