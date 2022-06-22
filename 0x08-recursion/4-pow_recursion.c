@@ -5,7 +5,7 @@
  *
  * @x: Receives integer input passed to function
  * @y: Receives integer input passed to function
- *  
+ * 
  *  Return: Always int
  */
 
@@ -21,6 +21,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		return (x * (_pow_recursion(x, y-1)));
+		return (x * (_pow_recursion(x, y - 1)));
 	}
 }
