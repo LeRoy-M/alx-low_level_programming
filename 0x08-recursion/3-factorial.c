@@ -3,6 +3,8 @@
 /**
  * factorial - Returns the factorial of a given number
  *
+ * @n: Receives integer input passed to function
+ *
  * Return: Always int
  */
 
@@ -17,5 +19,5 @@ int factorial(int n)
 		return (1);
 	}
 
-	return n * factorial(n - 1);
+	return (n * factorial(n - 1));
 }
