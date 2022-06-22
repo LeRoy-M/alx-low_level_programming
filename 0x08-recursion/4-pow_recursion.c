@@ -5,7 +5,7 @@
  *
  * @x: Receives integer input passed to function
  * @y: Receives integer input passed to function
- * 
+ *
  *  Return: Always int
  */
 
