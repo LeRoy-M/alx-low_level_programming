@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - Takes in two parameters
+ *
+ * @argc: First parameter passed
+ * @argv: Second parameter passed
+ *
+ * Return: Always 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s", argv[i]);
+	}
+	printf("\n");
+	return (0);
+}
