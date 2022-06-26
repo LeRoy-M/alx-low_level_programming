@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - Takes in two parameters
@@ -23,7 +24,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			mul *= atoi(argv[i]);
+			if (!(isdigit(*argv[i])))
+			{
+				printf("Error\n");
+				return (0);
+			}
+			else
+			{
+				mul *= atoi(argv[i]);
+			}
 		}
 		printf("%.0f\n", mul);
 	}
