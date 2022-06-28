@@ -23,8 +23,12 @@ char *create_array(unsigned int size, char c)
 		return ('\0');
 	}
 
-	do
+	else if (ar == NULL)
 	{
+		return (NULL);
+	}
+
+	do {
 		*(ar + i) = c;
 		i++;
 	} while (i < size);
