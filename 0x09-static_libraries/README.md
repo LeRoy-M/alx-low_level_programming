@@ -1,0 +1,2 @@
+0. A library is not a luxury but one of the necessities of life [libmy.a, main.h] >> Creating the static library _libmy.a_ containing several functions, and the _main.h_ file containing all the prototypes of the required functions
+1. Without libraries what have we? We have no past and no future [create_static_lib.sh] >> Creating _.sh_ script that creates the staic library _liball.a_ from all the _.c_ files
