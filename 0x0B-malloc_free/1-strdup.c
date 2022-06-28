@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *star;
 	int len, i;
 
-	len = 1;	
+	len = 1;
 
 	if (*str == '\0')
 	{
@@ -33,7 +33,7 @@ char *_strdup(char *str)
 
 	for (i = 0; i <= len; i++)
 	{
-		*(star + i) = str[i] ;
+		*(star + i) = str[i];
 	}
 
 	return (star);
