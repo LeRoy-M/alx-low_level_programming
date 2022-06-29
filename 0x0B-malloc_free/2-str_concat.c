@@ -14,8 +14,7 @@ char *str_concat(char *s1, char *s2)
 	char *catstr;
 	int s1len, s2len, i, j, totlen;
 
-	s1len = i = j = 0;
-	s2len = 0;
+	s1len = s2len = i = j = 0;
 
 	if (s1 == NULL || s2 == NULL)
 	{
@@ -31,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	} while (s2[s2len] != '\0');
 
 	totlen = s1len + s2len;
-	catstr = (char *) malloc(totlen * sizeof(char));
+	catstr = (char *) malloc((totlen + 1) * sizeof(char));
 
 	if (catstr == NULL)
 	{
