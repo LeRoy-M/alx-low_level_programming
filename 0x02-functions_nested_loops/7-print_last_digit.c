@@ -18,12 +18,12 @@ int print_last_digit(int n)
 
 	if (n >= 0)
 	{
-		_putchar(p_last);
+		_putchar('0' + p_last);
 		return (p_last);
 	}
 	else
 	{
-		_putchar(n_last);
+		_putchar('0' + n_last);
 		return (n_last);
 	}
 }
