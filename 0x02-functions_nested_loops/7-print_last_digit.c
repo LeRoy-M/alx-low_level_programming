@@ -21,7 +21,7 @@ int print_last_digit(int n)
 		_putchar('0' + p_last);
 		return (p_last);
 	}
-	else
+	else if (n < 0)
 	{
 		_putchar('0' + n_last);
 		return (n_last);
