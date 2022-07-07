@@ -12,7 +12,7 @@
 
 int main(int argc,char *argv[])
 {
-	int i, args;
+	int i, n;
 
 	if (argc != 2)
 	{
@@ -20,18 +20,18 @@ int main(int argc,char *argv[])
 		return (1);
 	}
 
-	args = atoi(argv[1]);
+	n = atoi(argv[1]);
 
-	if (args < 0)
+	if (n < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (i = 0; i < args; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%.2hhx", ((char *)(main + i)));
-		if (i < args - 1)
+		printf("%.2hhx", ((char *)main + i));
+		if (i < n - 1)
 		{
 			printf(" ");
 		}
