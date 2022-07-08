@@ -1,6 +1,5 @@
+#include <stdio.h>
 #include "variadic_functions.h"
-
-void to_stdout(int n);
 
 /**
  * print_numbers - Prints numbers
@@ -28,47 +27,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		x = va_arg(ap, int);
 
-		to_stdout(x);
+		printf("%d", x);
 
-		separator = ", ";
-		while (*separator != '\0' && i < (n - 1))
+		if (separator != NULL && i != (n - 1))
 		{
-			_putchar(*separator);
-			separator++;
+			printf("%s", separator);
 		}
 	}
 
 	va_end(ap);
-	_putchar('\n');
+	printf("\n");
 }
-
-/**
- * to_stdout - Prints number
- *
- * @n: Integer received
- *
- * Return: void
- */
-
-void to_stdout(int n)
-{
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-	}
-
-	if (n / 10)
-	{
-		to_stdout(n / 10);
-	}
-
-	_putchar((n % 10) + '0');
-}
-
