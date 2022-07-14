@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	int nod_cnt;
 	const list_t *count;
 
-	nod_cnt = 0;
+	nod_cnt = 1;
 	count = h;
 
 	do {
