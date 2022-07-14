@@ -14,11 +14,12 @@ size_t print_list(const list_t *h)
 	const list_t *temp;
 
 	nod_cnt = 0;
+	temp = h;
 
-	for (temp = h; temp != NULL; temp = temp->next)
-	{
+	do {
+		temp = temp->next;
 		nod_cnt++;
-	}
+	} while (temp != NULL);
 
 	if (h->str == NULL)
 	{
