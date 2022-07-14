@@ -16,10 +16,10 @@ size_t print_list(const list_t *h)
 	nod_cnt = 0;
 	temp = h;
 
-	do {
-		temp = temp->next;
+	for (temp = h; temp != NULL;temp = temp->next)
+	{
 		nod_cnt++;
-	} while (temp != NULL);
+	}
 
 	if (h->str == NULL)
 	{
