@@ -14,9 +14,8 @@ size_t print_list(const list_t *h)
 	const list_t *temp;
 
 	nod_cnt = 0;
-	temp = h;
 
-	for (temp = h; temp != NULL;temp = temp->next)
+	for (temp = h; temp != NULL; temp = temp->next)
 	{
 		nod_cnt++;
 	}
