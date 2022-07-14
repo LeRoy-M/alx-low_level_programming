@@ -11,15 +11,15 @@
 size_t print_list(const list_t *h)
 {
 	int nod_cnt;
-	const list_t *count;
+	const list_t *temp;
 
-	nod_cnt = 1;
-	count = h;
+	nod_cnt = 0;
+	temp = h;
 
 	do {
+		temp = temp->next;
 		nod_cnt++;
-		/*count = count->next;*/
-	} while (count != h);
+	} while (temp != NULL);
 
 	if (h->str == NULL)
 	{
