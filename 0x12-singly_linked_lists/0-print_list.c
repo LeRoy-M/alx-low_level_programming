@@ -10,14 +10,12 @@
 
 size_t print_list(const list_t *h)
 {
-	int nod_cnt;
-	const list_t *temp;
-	unsigned int str_len;
+	unsigned int nod_cnt;
+	int str_len;
 	char *cpy_str;
 
 	nod_cnt = str_len = 0;
 	cpy_str = h->str;
-	temp = h;
 
 	if (h->str != NULL)
 	{
@@ -26,22 +24,21 @@ size_t print_list(const list_t *h)
 			cpy_str++;
 			str_len++;
 		}
+
 	}
 
 	do {
-		temp = temp->next;
+		if (h->str == NULL)
+		{
+			printf("[%d] (nil)\n", str_len);
+		}
+		else
+		{
+			printf("[%d] %s\n", str_len, h->str);
+		}
+		h = h->next;
 		nod_cnt++;
-	} while (temp != NULL);
-
-	if (cpy_str == NULL)
-	{
-		printf("[%d] (nil)\n", str_len);
-		printf("[%d] %s\n", h->next->len, h->next->str);
-		return (nod_cnt);
-	}
-
-	printf("[%d] %s\n", str_len, h->str);
-	printf("[%d] %s\n", h->next->len, h->next->str);
+	} while (h != NULL);
 
 	return (nod_cnt);
 }
