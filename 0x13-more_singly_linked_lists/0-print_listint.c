@@ -13,6 +13,9 @@ size_t print_listint(const listint_t *h)
 	unsigned int nod_cnt;
 
 	nod_cnt = 0;
+	if (h == NULL)
+		return (0);
+
 	do {
 		printf("%i\n", h->n);
 		h = h->next;
