@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	unsigned long int actPrinted, output;
 	char *content;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 
 	fd = open(filename, O_RDONLY);
@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	content = malloc(sizeof(char) * letters);
-	if (!content)
+	if (content == NULL)
 		return (0);
 
 	actPrinted = read(fd, content, letters);
