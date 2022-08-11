@@ -13,8 +13,6 @@ void less_98(int n);
 
 void print_to_98(int n)
 {
-	int i;
-
 	while (n < 98)
 	{
 		less_98(n);
