@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -10,20 +9,25 @@
 
 int main(void)
 {
-	unsigned long int i, j, x, sequence;
+	unsigned long int i, j, fib;
+	int sequence;
 
-	i = 0, j = 1, x = i + j;
+	i = 0, j = 1, fib = i + j;
 	sequence = 0;
 
 	while (sequence != 98)
 	{
-		printf("%lu", x);
+		printf("%lu", fib);
 
-		i = j, j = x;
-		x = i + j;
+		i = j, j = fib;
+		fib = i + j;
+		
 		sequence++;
 		if (sequence != 98)
-			printf(", ");
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 
