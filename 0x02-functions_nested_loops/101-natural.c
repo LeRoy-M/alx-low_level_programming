@@ -4,7 +4,7 @@
  * main - Computes and prints sum of all the multiples of '3' and
  * '5' below '1024'
  *
- * Return: void
+ * Return: Always '0'
  */
 
 int main(void)
