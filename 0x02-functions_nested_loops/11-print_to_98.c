@@ -1,6 +1,7 @@
 #include "main.h"
 
 void less_98(int n);
+void greater_98(int n);
 
 /**
  * print_to_98 - Prints all natural numbers from 'n' to '98' followed
@@ -21,21 +22,7 @@ void print_to_98(int n)
 
 	while (n > 98)
 	{
-		if (n == 99)
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-		else if	(n > 99)
-		{
-			_putchar((n / 100) + '0');
-			_putchar(((n % 100) / 10) + '0');
-			_putchar(((n % 100) % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
+		greater_98(n);
 		n--;
 	}
 	_putchar((n / 10) + '0');
@@ -56,14 +43,24 @@ void less_98(int n)
 {
 	int i;
 
-	if (n < -9)
+	if (n < -99)
+	{
+		i = -n;
+		_putchar('-');
+		_putchar((i / 100) + '0');
+		_putchar(((i % 100) / 10) + '0');
+		_putchar(((i % 100) % 10) + '0');
+		_putchar(',');
+		_putchar(' ');
+	}
+	else if (n < -9)
 	{
 		i = -n;
 		_putchar('-');
 		_putchar((i / 10) + '0');
 		_putchar((i % 10) + '0');
 		_putchar(',');
-		_putchar(n + ' ');
+		_putchar(' ');
 	}
 	else if (n < 0 && n > -10)
 	{
@@ -89,6 +86,33 @@ void less_98(int n)
 	else
 	{
 		_putchar(n + '0');
+		_putchar(',');
+		_putchar(' ');
+	}
+}
+
+/**
+ * greater_98 - Prints all natural numbers from 'n' to '98'
+ *
+ * @n: Input during function call
+ *
+ * Return: void
+ */
+
+void greater_98(int n)
+{
+	if (n == 99)
+	{
+		_putchar((n / 10) + '0');
+		_putchar((n % 10) + '0');
+		_putchar(',');
+		_putchar(' ');
+	}
+	else if (n > 99)
+	{
+		_putchar((n / 100) + '0');
+		_putchar(((n % 100) / 10) + '0');
+		_putchar(((n % 100) % 10) + '0');
 		_putchar(',');
 		_putchar(' ');
 	}
