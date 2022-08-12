@@ -21,7 +21,7 @@ int main(void)
 
 		i = j, j = fib;
 		fib = i + j;
-		
+
 		sequence++;
 		if (sequence != 98)
 		{
