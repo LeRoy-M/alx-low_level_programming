@@ -10,18 +10,18 @@
 
 int main(void)
 {
-	unsigned long int i, j, x, y, sequence;
+	unsigned long int i, j, x, sequence;
 
-	i = 0, j = 1, x = i + j, y = j + x;
+	i = 0, j = 1, x = i + j;
 	sequence = 0;
 
 	while (sequence != 98)
 	{
-		printf("%lu, %lu", x, y);
+		printf("%lu", x);
 
-		i = x, j = y;
-		x = i + j, y = j + x;
-		sequence += 2;
+		i = j, j = x;
+		x = i + j;
+		sequence++;
 		if (sequence != 98)
 			printf(", ");
 	}
