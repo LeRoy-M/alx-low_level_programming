@@ -16,14 +16,14 @@ int main(void)
 
 	while (y <= 4000000)
 	{
-		i = x, j = y;
-		x = i + j, y = j + x;
-
 		if ((x % 2) == 0)
 			sum_even += x;
 
 		if ((y % 2) == 0)
 			sum_even += y;
+
+		i = x, j = y;
+		x = i + j, y = j + x;
 	}
 
 	printf("%ld\n", sum_even);
