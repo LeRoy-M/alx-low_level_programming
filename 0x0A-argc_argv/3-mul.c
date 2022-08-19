@@ -14,7 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	float mul = 1;
+	double mul = 1;
 
 	if (argc == 1)
 	{
