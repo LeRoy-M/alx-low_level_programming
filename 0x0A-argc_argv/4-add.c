@@ -18,13 +18,13 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("Error\n");
+		printf("%.0f\n", add);
 	}
 	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!(isdigit(*argv[i])))
+			if ((*argv[i] + 0) != *argv[i])
 			{
 				printf("Error\n");
 				return (0);
