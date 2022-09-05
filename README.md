@@ -21,3 +21,6 @@
 0x14 - Bit manipulation
 0x15 - File I/O
 0x16 - Simple Shell
+0x17 - Doubly linked lists
+0x18 - Dynamic libraries
+0x19 - Stacks, Queues (LIFO, FIFO)
