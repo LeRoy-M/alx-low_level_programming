@@ -1,4 +1,4 @@
 #!/bin/bash
-gcc -c *.c
+gcc -c -fPIC *.c
 ar -rc liball.so *.o
 ranlib liball.so
