@@ -10,7 +10,7 @@
  * Return: Always char type
  */
 
-char *_strncpy(char *dest, char *src, unsigned int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	return (dest);
 }
