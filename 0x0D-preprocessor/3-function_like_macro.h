@@ -1,6 +1,6 @@
 #ifndef FLM_H
 #define FLM_H
 
-#define ABS(x) (x)
+#define ABS(x)
 
 #endif /* FLM_H */
