@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include "hash_tables.h"
@@ -12,14 +13,17 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *ht_size;
+	hash_table_t* new_hash_table;
 
-	ht_size = malloc(sizeof(hash_table_t));
-	if (ht_size == NULL)
+	new_hash_table = malloc(sizeof(hash_table_t));
+	if (new_hash_table == NULL)
 		return (NULL);
 
-	ht_size->size = size;
-	ht_size->array = NULL;
+	new_hash_table->size = size;
+	new_hash_table->array = malloc(size * sizeof(hash_node_t));
 
-	return (ht_size);
+	if (new_hash_table->array == NULL)
+		return (NULL);
+
+	return (new_hash_table);
 }
