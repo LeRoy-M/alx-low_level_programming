@@ -11,14 +11,15 @@
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	unsigned long int index;
+	unsigned long int hash, index;
 	int i;
 
-	index = 5381;
+	hash = 5381;
 	while((i = *key++))
 	{
-		index = ((index << 5) + index) + i;
+		hash = ((hash << 5) + hash) + i;
 	}
+	index = hash % size;
 
-	return (index % size);
+	return (index);
 }
