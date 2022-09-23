@@ -15,7 +15,7 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 	int i;
 
 	hash = 5381;
-	while((i = *key++))
+	while ((i = *key++))
 	{
 		hash = ((hash << 5) + hash) + i;
 	}
