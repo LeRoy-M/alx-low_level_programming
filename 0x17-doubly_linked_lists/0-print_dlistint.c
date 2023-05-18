@@ -3,7 +3,7 @@
 /**
  * print_dlistint - Prints all the elements of a dlistint_t list
  *
- * @h: Head of list
+ * @h: Head of linked list
  *
  * Return: Always integer
  */
