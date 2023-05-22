@@ -1,2 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD= ./gm  
+LD_PRELOAD= ./gm
+export $LD_PRELOAD
