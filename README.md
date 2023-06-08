@@ -26,3 +26,4 @@
 ## 0x17 - Doubly linked lists
 ## 0x18 - Dynamic libraries
 ## 0x19 - Stacks, Queues (LIFO, FIFO)
+## 0x1A. C - Hash tables
