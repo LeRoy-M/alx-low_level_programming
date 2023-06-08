@@ -16,7 +16,7 @@
 
 **7. $ht['Betty'] = 'Cool'** `[100-sorted_hash_table.c]` >> Rewrite of the previous functions using the following data structures:
 
-> - `shash_table_t *shash_table_create(unsigned long int size);`
+- `shash_table_t *shash_table_create(unsigned long int size);`
 - `int shash_table_set(shash_table_t *ht, const char *key, const char *value);`
 	- The key/value pair is inserted in the sorted list at the right place
 	- Creates a sorted linked list, by key (sorted on ASCII value), that can be printed by traversing it.
