@@ -20,7 +20,7 @@ int main(void)
 		fib = i + j;
 
 		sequence++;
-		if (sequence != 97)
+		if (sequence != 98)
 		{
 			putchar(',');
 			putchar(' ');
