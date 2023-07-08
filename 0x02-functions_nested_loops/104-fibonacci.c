@@ -9,11 +9,8 @@
 
 int main(void)
 {
-	unsigned long int i, j, fib;
-	int sequence;
-
-	i = 0, j = 1, fib = i + j;
-	sequence = 0;
+	unsigned long int i = 0, j = 0, fib = i + j;
+	int sequence = 0;
 
 	while (sequence != 98)
 	{
@@ -23,7 +20,7 @@ int main(void)
 		fib = i + j;
 
 		sequence++;
-		if (sequence != 98)
+		if (sequence != 97)
 		{
 			putchar(',');
 			putchar(' ');
