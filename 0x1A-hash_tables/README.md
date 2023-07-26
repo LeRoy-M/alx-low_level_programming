@@ -1,4 +1,4 @@
-## 0x1A-hash_tables
+## 0x1A. C - Hash tables
 
 **0. >>> ht = {}** `[0-hash_table_create.c]` >> Function that creates a hash table with prototype `hash_table_t *hash_table_create(unsigned long int size);`, where `size` is the size of the array. This function returns a pointer to the newly created hash table, or `NULL` if something goes wrong.
 
