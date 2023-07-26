@@ -1,0 +1,15 @@
+## 0x1C. C - Makefiles
+
+**0. make -f 0-Makefile** `[0-Makefile]` >> Makefile with name of the executable as `school`, rules equal to `all` that builds the executable, and no variables.
+
+**1. make -f 1-Makefile** `[1-Makefile]` >> Makefile with name of the executable as `school`, rules equal to `all` that builds the executable, and variables `CC` (the compiler to be used) and `SRC` (the `.c` files).
+
+**2. make -f 2-Makefile** `[2-Makefile]` >> Makefile with name of the executable as `school`, rules equal to `all` that builds the executable, and variables `CC` (the compiler to be used), `SRC` (the `.c` files), `OBJ` (the `.o` files) and `NAME` (the name of the executable). `all` recompiles only the updated source files.
+
+**3. make -f 3-Makefile** `[3-Makefile]` >> Makefile with name of the executable as `school`, rules equal to `all` (builds the executable), `clean` (deletes all Emacs and Vim temporary files along with the executable), `oclean` (deletes the object files), `fclean` (deletes all Emacs and Vim temporary files, the executable, and the object files), and `re` (forces recompilation of all source files). The variables are `CC` (the compiler to be used), `SRC` (the `.c` files), `OBJ` (the `.o` files), `NAME` (the name of the executable), and `RM` (the program to delete files). `all` recompiles only the updated source files, and the `clean`, `oclean`, `fclean`, and `re` rules never fail.
+
+**4. A complete Makefile** `[4-Makefile]` >> Makefile with name of the executable as `school`, rules equal to `all` (builds the executable), `clean` (deletes all Emacs and Vim temporary files along with the executable), `oclean` (deletes the object files), `fclean` (deletes all Emacs and Vim temporary files, the executable, and the object files), and `re` (forces recompilation of all source files). The variables are `CC` (the compiler to be used), `SRC` (the `.c` files), `OBJ` (the `.o` files), `NAME` (the name of the executable), `RM` (the program to delete files), and `CFLAGS` (compiler flags `-Wall -Werror -Wextra -pedantic`). `all` recompiles only the updated source files, and the `clean`, `oclean`, `fclean`, and `re` rules never fail.
+
+**5. Island Perimeter** `[5-island_perimeter.py]` >> Function `def island_perimeter(grid):` that returns the perimeter of the island described in `grid`.
+
+**6. make -f 100-Makefile** `[100-Makefile]` >> Makefile with name of the executable as `school`, rules equal to `all` (builds the executable), `clean` (deletes all Emacs and Vim temporary files along with the executable), `oclean` (deletes the object files), `fclean` (deletes all Emacs and Vim temporary files, the executable, and the object files), and `re` (forces recompilation of all source files). The variables are `CC` (the compiler to be used), `SRC` (the `.c` files), `OBJ` (the `.o` files), `NAME` (the name of the executable), `RM` (the program to delete files), and `CFLAGS` (compiler flags `-Wall -Werror -Wextra -pedantic`). `all` recompiles only the updated source files, and the `clean`, `oclean`, `fclean`, and `re` rules never fail.
