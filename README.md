@@ -27,3 +27,5 @@
 ## 0x18 - Dynamic libraries
 ## 0x19 - Stacks, Queues (LIFO, FIFO)
 ## 0x1A. C - Hash tables
+## 0x1B. C - Sorting algorithms & Big O
+## 0x1C. C - Makefiles
