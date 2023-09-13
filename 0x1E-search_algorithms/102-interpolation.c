@@ -18,10 +18,12 @@ int interpolation_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
-	while ((array[idx] != array[high]) && (value >= array[idx]) && (value <= array[high]))
+	while ((array[idx] != array[high]) && (value >= array[idx]) &&
+			(value <= array[high]))
 	{
 		printf("Value checked array[%lu]: [%d]\n", idx, array[idx]);
-		mid = idx + ((value - array[idx]) * (high - idx) / (array[high] - array[idx]));
+		mid = idx + ((value - array[idx]) * (high - idx) / (array[high] -
+					array[idx]));
 
 		if (array[mid] < value)
 			idx = mid + 1;
